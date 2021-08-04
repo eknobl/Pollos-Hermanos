@@ -1,0 +1,369 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway", sans-serif;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 2em;
+}
+
+h4 {
+  font-weight: 700;
+  font-size: 1.2em;
+}
+
+h5 {
+  font-weight: 700;
+  font-size: 1em;
+}
+
+p {
+  font-weight: 400;
+  font-size: 1em;
+}
+
+.container {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 5vh;
+  list-style-type: none;
+  padding: 0;
+}
+
+nav a {
+  text-decoration: none;
+  text-align: center;
+  color: black;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 1.2em;
+}
+
+main {
+  border-top: 1px black solid;
+  width: 100%;
+  height: max-content;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  place-items: center;
+  gap: 3rem;
+  overflow: hidden;
+}
+
+.pollos-img {
+  margin: 2vh;
+  width: 100%;
+  object-fit: cover;
+}
+
+.pollos-main {
+  border-radius: 15px;
+  max-width: 100%;
+  height: auto;
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 2;
+  align-self: start;
+}
+
+.pollos-main2 {
+  display: none;
+}
+
+.pollos-logo {
+  grid-column: 3 / span 1;
+  grid-row: 1 / span 1;
+  align-self: start;
+}
+
+.pollos-producto {
+  border-radius: 15px;
+  grid-column: 3 / span 1;
+  grid-row: 2 / span 1;
+}
+
+section {
+  overflow: hidden;
+  width: 100%;
+  height: 30vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+  gap: 3rem;
+  border-top: 1px black solid;
+}
+
+.madrid-img {
+  margin: 2vh;
+  border-radius: 10px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.deadline {
+  margin-top: 1em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.deadline-format {
+  background: red;
+  color: white;
+  width: 5rem;
+  height: 5rem;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  margin-right: 1rem;
+  border-radius: 10px;
+}
+
+span {
+  font-size: 0.8em;
+}
+
+footer {
+  width: 100%;
+  height: 10vh;
+  align-items: center;
+  border-top: 1px black solid;
+  padding-top: 0.5vh;
+  font-weight: 100;
+  font-size: 1em;
+}
+
+.white {
+  display: inline-block;
+  position: absolute;
+  width: 100%;
+  height: 60vh;
+  background: white;
+}
+
+/* FORM */
+
+input[type="text"],
+input[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+input[type="checkbox"] {
+  margin-top: 16px;
+}
+
+input[type="submit"] {
+  background-color: red;
+  border-radius: 15px;
+  color: white;
+  border: none;
+}
+
+input[type="submit"]:hover {
+  opacity: 0.8;
+}
+
+.success {
+  position: relative;
+  z-index: 10;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 10em;
+  height: max-content;
+  padding: 3em;
+  background: rgb(250, 191, 28);
+  color: black;
+  border-radius: 15px;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (max-width: 320px) {
+  h3 {
+    font-weight: 700;
+    font-size: 1.2em;
+  }
+
+  h4 {
+    font-weight: 700;
+    font-size: 0.7em;
+  }
+
+  h5 {
+    font-weight: 400;
+    font-size: 0.9em;
+  }
+
+  p {
+    font-weight: 400;
+    font-size: 0.7em;
+  }
+
+  nav a {
+    font-size: 0.8em;
+    height: 3em;
+  }
+
+  main {
+    display: block;
+    position: relative;
+    height: max-content;
+  }
+
+  .pollos-logo {
+    transform: translate(-2000px);
+  }
+
+  .pollos-main {
+    display: none;
+  }
+
+  .pollos-main2 {
+    display: block;
+    margin: 0;
+    width: 90%;
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%);
+  }
+
+  .form-container-main {
+    width: 90%;
+    margin: 2em auto;
+  }
+
+  section {
+    display: inline-block;
+    padding: 0.5em;
+  }
+
+  .deadline-format {
+    width: 5rem;
+    height: 3.5rem;
+    margin-right: 1rem;
+  }
+
+  span {
+    font-size: 0.6em;
+  }
+
+  .madrid-img {
+    display: none;
+  }
+
+  footer {
+    padding: 0.5em;
+  }
+
+  .footer {
+    font-weight: 700;
+    font-size: 0.7em;
+    text-transform: uppercase;
+  }
+}
+
+@media (max-width: 415px) {
+  h3 {
+    font-weight: 700;
+    font-size: 1.2em;
+  }
+
+  h4 {
+    font-weight: 700;
+    font-size: 0.7em;
+  }
+
+  h5 {
+    font-weight: 400;
+    font-size: 0.9em;
+  }
+
+  p {
+    font-weight: 400;
+    font-size: 0.7em;
+  }
+
+  nav a {
+    font-size: 0.8em;
+    height: 3em;
+  }
+
+  main {
+    display: block;
+    position: relative;
+    height: max-content;
+  }
+
+  .pollos-logo {
+    transform: translate(-2000px);
+  }
+
+  .pollos-main {
+    display: none;
+  }
+
+  .pollos-main2 {
+    display: block;
+    margin: 0;
+    width: 90%;
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%);
+  }
+
+  .form-container-main {
+    width: 90%;
+    margin: 2em auto;
+  }
+
+  section {
+    display: inline-block;
+    padding: 0.5em;
+  }
+
+  .deadline-format {
+    width: 5rem;
+    height: 3.5rem;
+    margin-right: 1rem;
+  }
+
+  span {
+    font-size: 0.6em;
+  }
+
+  .madrid-img {
+    display: none;
+  }
+
+  footer {
+    padding: 0.5em;
+  }
+
+  .footer {
+    font-weight: 700;
+    font-size: 0.7em;
+    text-transform: uppercase;
+  }
+}
